@@ -1,0 +1,13 @@
+User-Agent: *
+Disallow: /*?gclid=
+Disallow: /*?utm_source=
+Disallow: /*?yclid=
+Disallow: /*_openstat*
+Disallow: /basket
+Disallow: /neworder
+Disallow: */redirect
+Disallow: /search
+Disallow: /*productName=
+Clean-param: etext&gbraid&gad_source&referrer
+
+Sitemap: https://ayanmarket.kz/sitemap.xml

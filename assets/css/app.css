@@ -1,0 +1,11 @@
+@import "tailwindcss";
+/* опционально */
+@plugin "tailwindcss-animate";
+
+@theme {
+  --radius: 0.5rem;
+  --primary: #6C5AF2;
+  --primary-foreground: white;
+  --background: oklch(99% 0 0);
+  --foreground: oklch(21% 0.03 247);
+}
