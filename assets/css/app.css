@@ -1,12 +1,12 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap');
 
 @custom-variant dark (&:is(.dark *));
-/* опционально */
 @plugin "tailwindcss-animate";
 
 @theme {
   --radius: 0.5rem;
-  --primary: #6C5AF2;
+  --primary: #503CC3;
   --primary-foreground: white;
   --background: oklch(99% 0 0);
   --foreground: oklch(21% 0.03 247);
@@ -127,6 +127,65 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-mulish;
+  }
+}
+
+@layer utilities {
+  /* Основные утилитарные классы для проекта */
+  .font-mulish {
+    font-family: 'Mulish', sans-serif;
+  }
+  
+  .text-primary {
+    color: #503CC3;
+  }
+  
+  .bg-primary {
+    background-color: #503CC3;
+  }
+  
+  .bg-gray-custom {
+    background-color: #E1E1E1;
+  }
+  
+  .text-gray-custom {
+    color: #8c959c;
+  }
+  
+  .rounded-custom {
+    border-radius: 8px;
+  }
+  
+  .rounded-custom-lg {
+    border-radius: 12px;
+  }
+  
+  .rounded-custom-xl {
+    border-radius: 16px;
+  }
+  
+  .rounded-custom-2xl {
+    border-radius: 20px;
+  }
+  
+  .rounded-custom-3xl {
+    border-radius: 28px;
+  }
+  
+  .rounded-custom-4xl {
+    border-radius: 38px;
+  }
+  
+  .shadow-custom {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .shadow-custom-lg {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .shadow-custom-xl {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   }
 }
